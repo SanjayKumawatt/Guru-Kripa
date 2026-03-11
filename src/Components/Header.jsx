@@ -17,9 +17,9 @@ export default function Header() {
     { name: 'HOME', path: '/' },
     { name: 'FIND A HOME', path: '/find-home' },
     { name: 'OUR STORY', path: '/our-story' },
-    { name: 'HOW MATCHING WORKS', path: '/how-matching-works' },
     { name: 'LIST YOUR PROPERTY', path: '/list-property' },
     { name: 'WHO IT SERVES', path: '/who-it-serves' },
+    { name: 'CONNECT', path: '/connect' },
   ];
 
   return (
@@ -55,10 +55,10 @@ export default function Header() {
             {/* Desktop CTA Button */}
             <div className="hidden lg:flex items-center">
               <Link 
-                to="/connect" 
+                to="/how-matching-works" 
                 className="group flex items-center gap-2 bg-blue-600 hover:bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all duration-300 shadow-md shadow-blue-500/30"
               >
-                <Users2Icon className="w-4 h-4" /> Connect
+                <Users2Icon className="w-4 h-4" /> HOW MATCHING WORKS
               </Link>
             </div>
 
