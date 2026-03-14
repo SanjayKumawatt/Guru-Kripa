@@ -129,15 +129,6 @@ export default function FindHome() {
         >
           <div className="bg-slate-50 rounded-[2.5rem] p-8 md:p-12 border border-slate-200 text-center shadow-sm">
             
-            {/* CTA Button */}
-            <div className="mb-12">
-              <Link 
-                to="/start-search" 
-                className="inline-flex items-center justify-center gap-3 bg-blue-600 hover:bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-300 shadow-xl shadow-blue-500/20"
-              >
-                <Search className="w-6 h-6" /> Start Your Search
-              </Link>
-            </div>
 
             {/* Note on Fees Box */}
             <div className="bg-white rounded-2xl p-8 border border-slate-200 text-left shadow-sm">

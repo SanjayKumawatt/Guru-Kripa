@@ -116,69 +116,16 @@ export default function OurStory() {
                 We are a startup. The platform described on this website is in development. If you want to be part of the first cohort of verified tenants and landlords, register your interest and we will be in touch before the launch.
               </p>
             </div>
-            <a 
-              href="https://gurukripaservice.in" 
+            <Link 
+              to={"/connect"} 
               className="w-full md:w-auto flex-shrink-0 bg-white text-blue-600 hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-colors flex items-center justify-center gap-2 shadow-sm"
             >
               Register Now <ArrowRight className="w-5 h-5" />
-            </a>
+            </Link>
           </div>
         </motion.div>
 
-        {/* Registered Details (Trust Anchor) */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="bg-slate-900 rounded-b-[3rem] p-8 md:p-16 text-slate-300 shadow-2xl relative overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-          
-          <div className="flex items-center gap-3 mb-8 text-white">
-            <ShieldCheck className="w-6 h-6 text-blue-500" />
-            <h3 className="text-2xl font-bold tracking-wide">Registered Details</h3>
-          </div>
-
-          <p className="mb-8 text-lg font-medium leading-relaxed">
-            Guru Kripa Infra Service Private Limited is incorporated under the Companies Act, 2013.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-start gap-4">
-              <MapPin className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
-              <div>
-                <p className="text-sm text-slate-400 uppercase tracking-widest font-bold mb-1">Registered Address</p>
-                <p className="font-medium text-white leading-relaxed">
-                  1121/1597, Gandhi Nagar,<br/> 
-                  Bura Gujjar Road, Muktsar, Malout,<br/> 
-                  Punjab - 152101, India.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-4">
-                <Globe className="w-5 h-5 text-blue-500 shrink-0" />
-                <div>
-                  <p className="text-sm text-slate-400 uppercase tracking-widest font-bold mb-1">Website</p>
-                  <a href="https://gurukripaservice.in" className="font-medium text-white hover:text-blue-400 transition-colors">
-                    gurukripaservice.in
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <Mail className="w-5 h-5 text-blue-500 shrink-0" />
-                <div>
-                  <p className="text-sm text-slate-400 uppercase tracking-widest font-bold mb-1">Email</p>
-                  <a href="mailto:talk@gurukripaservice.in" className="font-medium text-white hover:text-blue-400 transition-colors">
-                    talk@gurukripaservice.in
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+        
 
       </div>
     </div>
